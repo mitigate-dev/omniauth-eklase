@@ -23,7 +23,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-You can also see a simplified Rack example in [bin/server]().
+You can also see a simplified Rack example in [bin/server](bin/server).
 
 ## Auth Hash
 

@@ -46,7 +46,7 @@ Here's an example Auth Hash available in `request.env['omniauth.auth']`:
     "class_alias"          => "8.b (PĢ)"
   },
   credentials: {
-    "token"      => "5099ce2f-0b07-4b50-8804-4273ecaa01d1",
+    "token"      => "99895d09-a454-4f46-9a26-35b4d038c6fe",
     "expires_at" => 1452258538,
     "expires"    => true
   },

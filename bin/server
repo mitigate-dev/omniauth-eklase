@@ -8,6 +8,7 @@ end
 require "bundler/setup"
 require "omniauth-eklase"
 require "rack"
+require "byebug"
 
 class App
   def call(env)
@@ -16,9 +17,9 @@ class App
     case req.path_info
     when %r{^/$}
       [200, {"Content-Type" => "text/html"}, ["<a href='/auth/eklase'>Sign in with e-klase</a>"]]
-    when %r{^/auth/:name/callback$}
+    when %r{^/auth/eklase/callback}
       auth = req.env['omniauth.auth']
-      [200, {"Content-Type" => "text/html"}, [auth.inspect]]
+      [200, {"Content-Type" => "text/html"}, [auth.to_hash.inspect]]
     else
       [404, {"Content-Type" => "text/html"}, ["Not found"]]
     end

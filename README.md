@@ -23,6 +23,8 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
+You can also see a simplified Rack example in [bin/server]().
+
 ## Auth Hash
 
 Here's an example Auth Hash available in `request.env['omniauth.auth']`:
@@ -30,13 +32,38 @@ Here's an example Auth Hash available in `request.env['omniauth.auth']`:
 ```ruby
 {
   provider: "eklase",
-  uid: "...",
+  uid: "skolens123456789",
   info: {
+    "id"                   => "99895d09-a454-4f46-9a26-35b4d038c6fe",
+    "first_name"           => "Ivo",
+    "last_name"            => "Paraugs",
+    "person_type"          => "Student",
+    "user_name"            => "skolens123456789",
+    "school_id"            => "IDACC-ORG-20111012-BBBF04AC",
+    "school"               => "Testa skola",
+    "class_number"         => "8",
+    "class_number_postfix" => "b",
+    "class_alias"          => "8.b (PĢ)"
   },
   credentials: {
+    "token"      => "5099ce2f-0b07-4b50-8804-4273ecaa01d1",
+    "expires_at" => 1452258538,
+    "expires"    => true
   },
   extra: {
     raw_info: {
+      "Person" => {
+        "ID"                 => "99895d09-a454-4f46-9a26-35b4d038c6fe",
+        "FirstName"          => "Ivo",
+        "LastName"           => "Paraugs",
+        "PersonType"         => "Student",
+        "UserName"           => "skolens123456789",
+        "SchoolId"           => "IDACC-ORG-20111012-BBBF04AC",
+        "School"             => "Testa skola",
+        "ClassNumber"        => "8",
+        "ClassNumberPostfix" => "b",
+        "ClassAlias"         => "8.b (PĢ)"
+      }
     }
   }
 }

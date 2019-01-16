@@ -13,7 +13,7 @@ module OmniAuth
         token_url:     '/Auth/OAuth/GetAccessToken/',
         token_method:  :get
 
-      uid { info["user_name"] }
+      uid { info["id"] }
 
       info do
         raw_info["Person"].inject({}) do |h, (k, v)|

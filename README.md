@@ -32,7 +32,7 @@ Here's an example Auth Hash available in `request.env['omniauth.auth']`:
 ```ruby
 {
   provider: "eklase",
-  uid: "skolens123456789",
+  uid: "99895d09-a454-4f46-9a26-35b4d038c6fe",
   info: {
     "id"                   => "99895d09-a454-4f46-9a26-35b4d038c6fe",
     "first_name"           => "Ivo",

@@ -47,7 +47,7 @@ describe OmniAuth::Strategies::Eklase do
       end
 
       it 'returns uid' do
-        expect(auth.uid).to eq('skolens123456789')
+        expect(auth.uid).to eq("99895d09-a454-4f46-9a26-35b4d038c6fe")
       end
 
       it 'returns info' do
